@@ -1,0 +1,136 @@
+{
+	"categories" : [
+		{
+			"id"    : 1,
+			"name"  : "Hedelmät",
+			"items" : [
+				{
+					"id"          : 1,
+					"name"        : "Appelsiini",
+					"price"       : 0.99,
+					"description" : "Brunon herkullinen appelsiini",
+					"image_url"   : "images/orange.jpg",
+					"category_id" : 1,
+					"scale"       : "kg"
+				},
+				{
+					"id"          : 2,
+					"name"        : "Omena",
+					"price"       : 1.29,
+					"description" : "Maukas omena Espanjasta",
+					"image_url"   : "images/apple.jpg",
+					"category_id" : 1,
+					"scale"       : "kg"
+				},
+				{
+					"id"          : 3,
+					"name"        : "Banaani",
+					"price"       : 0.52,
+					"description" : "Chiquitan banaanit ovat koko maailman suosituimpia",
+					"image_url"   : "images/banana.jpg",
+					"category_id" : 1,
+					"scale"       : "kg"
+				}
+			]
+		},
+		{
+			"id"    : 2,
+			"name"  : "Vihannekset",
+			"items" : [
+				{
+					"id"          : 4,
+					"name"        : "Porkkana",
+					"price"       : 1.56,
+					"description" : "Suomalaista porkkanaa",
+					"image_url"   : "images/carrot.jpg",
+					"category_id" : 2,
+					"scale"       : "kg"
+				},
+				{
+					"id"          : 5,
+					"name"        : "Peruna",
+					"price"       : 0.78,
+					"description" : "Suomalaista jauhoista perunaa muusiin ja muuhun",
+					"image_url"   : "images/potato.jpg",
+					"category_id" : 2,
+					"scale"       : "kg"
+				},
+				{
+					"id"          : 6,
+					"name"        : "Kurpitsa",
+					"price"       : 1.99,
+					"description" : "Amerikkalaista kurpitsaa",
+					"image_url"   : "images/pumpkin.jpg",
+					"category_id" : 2,
+					"scale"       : "kg"
+				}
+			]
+		},
+		{
+			"id"    : 3,
+			"name"  : "Lihat",
+			"items" : [
+				{
+					"id"          : 7,
+					"name"        : "Jauhelihaa",
+					"price"       : 6.89,
+					"description" : "Suomalaista jauhelihaa",
+					"image_url"   : "images/meat.jpg",
+					"category_id" : 3,
+					"scale"       : "kg"
+				},
+				{
+					"id"          : 8,
+					"name"        : "Kanan ohutfilee",
+					"price"       : 11.95,
+					"description" : "Kotimaista kanaa",
+					"image_url"   : "images/chicken.jpg",
+					"category_id" : 3,
+					"scale"       : "kg"
+				},
+				{
+					"id"          : 9,
+					"name"        : "Lammasta",
+					"price"       : 24.59,
+					"description" : "Lammasta Irlannista",
+					"image_url"   : "images/lamb.jpg",
+					"category_id" : 3,
+					"scale"       : "kg"
+				}
+			]
+		},
+		{
+			"id"    : 4,
+			"name"  : "Juomat",
+			"items" : [
+				{
+					"id"          : 10,
+					"name"        : "Valio kevytmaito",
+					"price"       : 0.99,
+					"description" : "Valion tavallinen kevytmaito",
+					"image_url"   : "images/milk-valio.jpg",
+					"category_id" : 4,
+					"scale"       : "kpl"
+				},
+				{
+					"id"          : 11,
+					"name"        : "Brazil appelsiinimehu",
+					"price"       : 1.59,
+					"description" : "",
+					"image_url"   : "images/brazil-orange-juice.jpg",
+					"category_id" : 4,
+					"scale"       : "kpl"
+				},
+				{
+					"id"          : 12,
+					"name"        : "Keisari Dark Premium -olut",
+					"price"       : 1.99,
+					"description" : "Nokian panimon helmi",
+					"image_url"   : "images/keisari.jpg",
+					"category_id" : 4,
+					"scale"       : "kpl"
+				}
+			]
+		}
+	]
+}

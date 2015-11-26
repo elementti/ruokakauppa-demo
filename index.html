@@ -1,0 +1,122 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+
+      <div class="topbar box">
+        <div class="wrapper wrapper--topbar">
+          <a class="logo" href="/"></a>
+          <div class="topbar__search">
+            <input type="text" name="search" placeholder="Hae tuotteita" autofocus="true" id="search" class="search__input" />
+            <button type="button" class="btn btn--search" id="search-button">Hae</button>
+          </div>
+          <div class="cart" id="cart">
+            <span class="cart__icon">
+              <svg version="1.1" id="Shopping_cart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                 y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+              <path d="M13,17c0,1.104,0.894,2,2,2c1.104,0,2-0.896,2-2c0-1.106-0.896-2-2-2C13.894,15,13,15.894,13,17z M3,17c0,1.104,0.895,2,2,2
+                c1.103,0,2-0.896,2-2c0-1.106-0.897-2-2-2C3.895,15,3,15.894,3,17z M6.547,12.172L17.615,9.01C17.826,8.949,18,8.721,18,8.5V3H4V1.4
+                C4,1.18,3.819,1,3.601,1H0.399C0.18,1,0,1.18,0,1.4L0,3h2l1.91,8.957L4,12.9v1.649c0,0.219,0.18,0.4,0.4,0.4H17.6
+                c0.22,0,0.4-0.182,0.4-0.4V13H6.752C5.602,13,5.578,12.449,6.547,12.172z"/>
+              </svg>
+            </span>
+            <span class="cart__bill">0,00€</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="wrapper">
+          <div class="sidebar box">
+            <h3 class="sidebar__title">Tuotekategoriat:</h3>
+            <ul class="category__items">
+              <li class="category__item">
+                <a href="#" class="category__link">Hedelmät</a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__link">Vihannekset</a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__link">Lihat</a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__link">Juomat</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main">
+            <div class="products" id="products"></div>
+          </div>
+        </div>
+      </div>
+
+      <script id="itemsTpl" type="x-tmpl-mustache">
+        {{#categories}}
+          {{#items}}
+            <div class="product box" data-product-id="{{id}}" data-category-id="{{category_id}}">
+              <div class="product__header">
+                <h4 class="product__name">{{name}}</h4>
+              </div>
+              <figure>
+                <img src="{{image_url}}" class="product__img" onload="javascript: this.style.opacity=1;" alt="{{name}}">
+              </figure>
+              <div class="product__info">
+                <p class="product__description">{{description}}</p>
+                <p class="product__price">{{price}} € <span class="product__scale">/ {{scale}}</span></p>
+                <button type="button" class="btn btn--order">Lisää ostoskoriin</button>
+              </div>
+            </div>
+          {{/items}}
+        {{/categories}}
+      </script>
+
+      <script id="productTpl" type="x-tmpl-mustache">
+        <div class="product product--single box" data-product-id="{{id}}" data-category-id="{{category_id}}">
+          <div class="product__body">
+            <figure>
+              <img src="{{image_url}}" class="product__img" onload="javascript: this.style.opacity=1;" alt="{{name}}">
+            </figure>
+          </div>
+          <div class="product__sidebar">
+            <div class="product__header">
+              <h4 class="product__name">{{name}}</h4>
+            </div>
+            <div class="product__info">
+              <p class="product__description">{{description}}</p>
+            </div>
+            <p class="product__price">{{price}} € <span class="product__scale">/ {{scale}}</span></p>
+            <button type="button" class="btn btn--order">Lisää ostoskoriin</button>
+          </div>
+        </div>
+      </script>
+
+      <!-- Scripts -->
+      <script src="js/lib/rsvp.min.js"></script>
+      <script src="js/lib/mustache.min.js"></script>
+      <script src="js/lib/horsey.min.js"></script>
+      <script src="js/app.js"></script>
+
+      <!-- Google Webfonts config -->
+      <script type="text/javascript">
+        WebFontConfig = {
+          google: { families: [ 'Roboto:400,700:latin' ] }
+        };
+        (function() {
+          var wf = document.createElement('script');
+          wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+          wf.type = 'text/javascript';
+          wf.async = 'true';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(wf, s);
+        })();
+      </script>
+    </body>
+</html>
