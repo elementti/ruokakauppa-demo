@@ -36,7 +36,8 @@
         <div class="wrapper">
           <div class="sidebar box">
             <h3 class="sidebar__title">Tuotekategoriat:</h3>
-            <ul class="category__items">
+            <span class="sidebar__toggle" id="menu-toggle">Valikko</span>
+            <ul class="category__items" id="menu">
               <li class="category__item">
                 <a href="#" class="category__link">Hedelmät</a>
               </li>
@@ -98,7 +99,10 @@
       </script>
 
       <!-- Scripts -->
-      <script src="js/app.min.js"></script>
+      <script src="js/lib/RSVP.min.js"></script>
+      <script src="js/lib/horsey.min.js"></script>
+      <script src="js/lib/mustache.min.js"></script>
+      <script src="js/app.js"></script>
 
       <!-- Google Webfonts config -->
       <script type="text/javascript">

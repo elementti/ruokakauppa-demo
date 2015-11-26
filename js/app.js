@@ -100,4 +100,9 @@ document.addEventListener('DOMContentLoaded', function(){
     if ( key == 13 ) APP.search();
 	});
 
+	document.getElementById('menu-toggle').addEventListener('click', function() {
+		var menu = document.getElementById('menu');
+		(menu.classList.contains('category__items--show')) ? menu.classList.remove('category__items--show') : menu.classList.add('category__items--show');
+	});
+
 });
