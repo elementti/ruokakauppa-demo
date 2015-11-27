@@ -36,15 +36,15 @@ body {
 	.wrapper {
 		max-width: 736px;
 	}
-
-	.wrapper--topbar {
-		width: 100%;
-	}
 }
 
 @media only screen and (min-width: 1024px) {
 	.wrapper {
 		max-width: 960px;
+	}
+
+	.wrapper--topbar {
+		width: 100%;
 	}
 }
 
